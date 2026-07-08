@@ -62,26 +62,10 @@ a {
   letter-spacing: 0.02em;
 }
 
-.logo-mark {
-  width: 36px;
-  height: 36px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--color-green), #7dd3fc);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #06131f;
-  font-weight: 800;
-}
-
 .logo-image {
   width: 400px;
   height: auto;
   display: block;
-}
-
-.logo-text {
-  font-size: 1.1rem;
 }
 
 .nav-links {
