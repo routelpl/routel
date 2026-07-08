@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Elektronika | Routel</title>
+
+  <meta
+    name="description"
+    content="Projekty elektroniczne Routel: generator sygnałów AD9833, wzmacniacz audio klasy D oraz inne układy prototypowe."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html#start" class="logo">
+        <img src="assets/logo-routel.png" alt="Logo Routel" class="logo-image">
+      </a>
+
+      <button class="menu-toggle" aria-label="Otwórz menu">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html#budownictwo">Budownictwo</a></li>
+        <li><a href="elektronika.html">Elektronika</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <p class="eyebrow">Projekty elektroniczne</p>
+        <h1>Elektronika</h1>
+        <p>
+          Projekty hobbystyczne i rozwojowe związane z układami analogowymi,
+          cyfrowymi, mikrokontrolerami, pomiarami i prototypowaniem urządzeń.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="projects-wrapper">
+
+        <article class="project-row">
+          <div class="project-image">
+            <img src="assets/project-ad9833.jpg" alt="Generator sygnałów AD9833">
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Generator funkcyjny</p>
+            <h2>Generator sygnałów w oparciu o AD9833</h2>
+
+            <p>
+              Projekt generatora sygnałów wykorzystującego układ DDS AD9833.
+              Założeniem projektu jest budowa kompaktowego generatora przebiegów
+              sinusoidalnych, prostokątnych i trójkątnych, sterowanego z poziomu
+              mikrokontrolera.
+            </p>
+
+            <p>
+              Projekt obejmuje część cyfrową, interfejs użytkownika, sterowanie
+              układem AD9833, tor wyjściowy, filtrację sygnału oraz zagadnienia
+              związane ze skalowaniem amplitudy i offsetem.
+            </p>
+
+            <div class="project-tags">
+              <span>AD9833</span>
+              <span>DDS</span>
+              <span>STM32</span>
+              <span>SPI</span>
+              <span>Układy analogowe</span>
+            </div>
+
+            <a href="#" class="project-link">Szczegóły projektu</a>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-image">
+            <img src="assets/project-audio-class-d.jpg" alt="Wzmacniacz audio klasy D">
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Audio</p>
+            <h2>Wzmacniacz audio klasy D</h2>
+
+            <p>
+              Projekt wzmacniacza audio klasy D, którego celem jest poznanie
+              praktycznych aspektów budowy wydajnych wzmacniaczy impulsowych:
+              od zasilania, przez tor wejściowy, po filtrację wyjścia i dobór
+              elementów mocy.
+            </p>
+
+            <p>
+              Projekt może służyć jako stanowisko do nauki zagadnień związanych
+              z modulacją PWM, sprawnością energetyczną, prowadzeniem masy,
+              zakłóceniami EMI oraz projektowaniem układów audio.
+            </p>
+
+            <div class="project-tags">
+              <span>Audio</span>
+              <span>Klasa D</span>
+              <span>PWM</span>
+              <span>Filtr LC</span>
+              <span>Zasilanie</span>
+            </div>
+
+            <a href="#" class="project-link">Szczegóły projektu</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Routel. Portfolio techniczne.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
