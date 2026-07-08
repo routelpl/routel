@@ -559,3 +559,19 @@ a {
     aspect-ratio: 16 / 9;
   }
 }
+
+.project-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(47, 191, 113, 0.18), rgba(125, 211, 252, 0.16)),
+    var(--color-bg);
+}
+
+.project-placeholder span {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
