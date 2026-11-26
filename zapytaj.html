@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zapytaj o wycenę | Routel</title>
+  <meta
+    name="description"
+    content="Wyślij zapytanie o wycenę projektu drogowego do ROUTEL."
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .quote-form {
+      display: grid;
+      gap: 20px;
+      max-width: 850px;
+      background: var(--color-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: clamp(20px, 4vw, 36px);
+      box-shadow: var(--shadow);
+    }
+
+    .quote-field {
+      display: grid;
+      grid-template-columns: 12rem minmax(0, 1fr);
+      gap: 8px 20px;
+      align-items: start;
+    }
+
+    .quote-field label {
+      padding-top: 10px;
+      font-weight: 600;
+    }
+
+    .quote-field input,
+    .quote-field textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--color-muted);
+      border-radius: 10px;
+      background: var(--color-white);
+      color: var(--color-text);
+      font: inherit;
+    }
+
+    .quote-field textarea {
+      min-height: 12rem;
+      resize: vertical;
+    }
+
+    .quote-field :is(input, textarea):focus-visible {
+      outline: 2px solid var(--color-green-dark);
+      outline-offset: 2px;
+    }
+
+    .quote-form .btn {
+      justify-self: start;
+      margin-left: 13.25rem;
+      border: 0;
+      font-family: inherit;
+      font-size: inherit;
+      cursor: pointer;
+    }
+
+    .quote-form .btn:focus-visible {
+      outline: 2px solid var(--color-bg);
+      outline-offset: 3px;
+    }
+
+    .nav-links [aria-current="page"] {
+      color: var(--color-green);
+    }
+
+    @media (max-width: 600px) {
+      .quote-field {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .quote-field label {
+        padding-top: 0;
+      }
+
+      .quote-form .btn {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Menu główne">
+      <a href="index.html#start" class="logo">
+        <img src="assets/logo1.png" alt="Logo Routel" class="logo-image">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Otwórz menu">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="budownictwo.html">Budownictwo</a></li>
+        <li><a href="elektronika.html">Elektronika</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="zapytaj.html" aria-current="page">Zapytaj o wycenę</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <h1>Zapytaj o wycenę</h1>
+        <p>Opisz zakres prac, podaj lokalizację i oczekiwany termin, jeśli go znasz.</p>
+      </div>
+    </section>
+
+    <section class="projects-section" aria-label="Formularz zapytania o wycenę">
+      <div class="projects-wrapper">
+        <form
+          class="quote-form"
+          action="https://formsubmit.co/kontakt@routel.pl"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="ROUTEL — nowe zapytanie o wycenę"
+          />
+
+          <div class="quote-field">
+            <label for="quote-name">Imię / nazwa firmy</label>
+            <input id="quote-name" name="Imię lub nazwa firmy" type="text" required />
+          </div>
+
+          <div class="quote-field">
+            <label for="quote-subject">Temat</label>
+            <input id="quote-subject" name="Temat" type="text" required />
+          </div>
+
+          <div class="quote-field">
+            <label for="quote-email">Adres e-mail</label>
+            <input
+              id="quote-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="quote-field">
+            <label for="quote-description">Opis zapytania</label>
+            <textarea
+              id="quote-description"
+              name="Opis zapytania"
+              rows="8"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Routel. Portfolio techniczne.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
