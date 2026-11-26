@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zapytaj o wycenę | Routel</title>
-  <meta name="description" content="Zapytaj ROUTEL o wycenę projektu drogowego." />
+  <title>Kontakt i wycena | Routel</title>
+  <meta name="description" content="Zapytaj o wycenę projektu lub współpracę." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,50 +17,57 @@
       <ul class="nav-links">
         <li><a href="budownictwo.html">Budownictwo</a></li>
         <li><a href="elektronika.html">Elektronika</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
-        <li><a href="zapytaj.html" aria-current="page">Zapytaj o wycenę</a></li>
+        <li><a href="zapytaj.html" aria-current="page">Kontakt i wycena</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="page-hero">
-      <div class="page-hero-content">
-        <h1>Zapytaj o wycenę</h1>
-        <p>
-          Napisz, czego dotyczy projekt, podaj lokalizację i oczekiwany termin,
-          jeśli go znasz. Mapę lub zdjęcia możesz dołączyć do wiadomości.
-        </p>
-      </div>
-    </section>
+ <main>
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>Kontakt i wycena</h1>
+      <p>
+        Napisz, jeśli potrzebujesz wyceny projektu drogowego
+        lub chcesz porozmawiać o współpracy przy opracowaniach.
+      </p>
+    </div>
+  </section>
 
-    <section class="section contact-section" aria-label="Kontakt w sprawie wyceny">
-      <div class="contact-box">
-        <h2>Wyślij zapytanie e-mailem</h2>
-        <div class="contact-actions">
-          <a
-            class="btn btn-primary"
-            href="mailto:kontakt@routel.pl?subject=Zapytanie%20o%20wycen%C4%99"
-          >Napisz e-mail</a>
-        </div>
-        <p class="contact-note">
-          Adres do skopiowania: <strong>kontakt@routel.pl</strong>
-        </p>
-        <p>
-          Dane z wiadomości wykorzystuję do obsługi zapytania i udzielenia
-          odpowiedzi.
-          <a href="polityka-prywatnosci.html" style="text-decoration: underline;">
-            Informacja o przetwarzaniu danych osobowych
-          </a>
-        </p>
-      </div>
-    </section>
-  </main>
+  <section class="section contact-section" aria-labelledby="contact-heading">
+    <div class="contact-box">
+      <h2 id="contact-heading">Napisz do ROUTEL</h2>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Routel.</p>
-    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-  </footer>
+      <p>
+        W zapytaniu o wycenę podaj lokalizację, zakres prac i oczekiwany
+        termin, jeśli go znasz. Mapę lub zdjęcia możesz dołączyć
+        do wiadomości.
+      </p>
+
+      <div class="contact-actions">
+        <a
+          class="btn btn-primary"
+          href="mailto:kontakt@routel.pl?subject=Zapytanie%20o%20wycen%C4%99"
+        >Zapytaj o wycenę</a>
+
+        <a
+          class="btn btn-secondary"
+          href="mailto:kontakt@routel.pl?subject=Wsp%C3%B3%C5%82praca%20projektowa"
+        >Napisz w sprawie współpracy</a>
+      </div>
+
+      <p class="contact-note">
+        Adres e-mail <strong>kontakt@routel.pl</strong>
+      </p>
+
+      <p>
+        Dane z wiadomości wykorzystuję do obsługi korespondencji.
+        <a href="polityka-prywatnosci.html" style="text-decoration: underline;">
+          Informacja o przetwarzaniu danych osobowych
+        </a>
+      </p>
+    </div>
+  </section>
+</main>
 
   <script src="script.js"></script>
 </body>
