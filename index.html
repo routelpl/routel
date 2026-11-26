@@ -1,204 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Routel | Budownictwo drogowe i elektronika</title>
-
-  <meta
-    name="description"
-    content="Portfolio firmowo-prywatne Routel: budownictwo drogowe, organizacja ruchu, dokumentacja techniczna oraz projekty elektroniczne."
-  />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ROUTEL Bartosz Musiał. Organizacja ruchu, projekty zjazdów, dokumentacja drogowa, przedmiary i kosztorysy.">
+  <title>Projekty drogowe i organizacja ruchu | ROUTEL</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="routel-firma.css">
+  <script src="routel-firma.js" defer></script>
 </head>
-
 <body>
   <header class="site-header">
-    <nav class="navbar">
-      <a href="#start" class="logo">
-        <img src="assets/logo1.png" alt="Logo Routel" class="logo-image">
+    <nav class="container nav routel-nav" aria-label="Menu główne">
+      <a class="logo" href="index.html" aria-label="ROUTEL — strona główna">
+        <img src="assets/logo1.png" alt="ROUTEL">
       </a>
-
-      <button class="menu-toggle" aria-label="Otwórz menu">
-        ☰
-      </button>
-
-      <ul class="nav-links">
-        <li><a href="budownictwo.html">Budownictwo</a></li>
-        <li><a href="elektronika.html">Elektronika</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+      <button class="menu-toggle" type="button" aria-controls="menu"
+              aria-expanded="false" aria-label="Otwórz menu">☰</button>
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html#oferta">Oferta</a></li>
+        <li><a href="index.html#projekty">Projekty</a></li>
+        <li><a href="index.html#o-mnie">O mnie</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a class="btn btn-primary" href="index.html#kontakt">Zapytaj o wycenę</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    <section id="start" class="hero section">
-      <div class="hero-content">
-        <p class="eyebrow">Portfolio firmowo-prywatne</p>
-
-        <h1>Routel — drogi, technika i elektronika</h1>
-
-        <p class="hero-text">
-          Łączę doświadczenie w budownictwie drogowym z zainteresowaniem elektroniką,
-          automatyką i systemami sterowania. Strona prezentuje moje kompetencje,
-          realizacje oraz projekty techniczne rozwijane zawodowo i hobbystycznie.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#budownictwo" class="btn btn-primary">Budownictwo</a>
-          <a href="#elektronika.html" class="btn btn-secondary">Elektronika</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="card-line"></div>
-        <h2>Profil techniczny</h2>
-        <p>
-          Dokumentacja, organizacja ruchu, rozwiązania drogowe, mikrokontrolery,
-          sterowniki, systemy pomiarowe i prototypowanie.
-        </p>
-      </div>
-    </section>
-
-    <section id="budownictwo" class="section section-light">
-      <div class="section-heading">
-        <p class="eyebrow">Obszar zawodowy</p>
-        <h2>Budownictwo drogowe</h2>
-        <p>
-          Wykształcenie i doświadczenie zawodowe związane z drogami, organizacją ruchu
-          oraz dokumentacją techniczną.
-        </p>
-      </div>
-
-      <div class="grid">
-        <article class="info-card">
-          <h3>Organizacja ruchu</h3>
-          <p>
-            Projekty stałej i czasowej organizacji ruchu, analiza oznakowania,
-            rozwiązań dla skrzyżowań, zjazdów, przejść dla pieszych i robót w pasie drogowym.
-          </p>
-        </article>
-
-        <article class="info-card">
-          <h3>Dokumentacja techniczna</h3>
-          <p>
-            Przygotowanie opracowań technicznych, opisów, zestawień, kosztorysów,
-            przedmiarów oraz materiałów pomocniczych do realizacji zadań drogowych.
-          </p>
-        </article>
-
-        <article class="info-card">
-          <h3>Analiza rozwiązań</h3>
-          <p>
-            Ocena geometrii, widoczności, bezpieczeństwa ruchu oraz praktycznych aspektów
-            wdrożenia projektowanych rozwiązań w terenie.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="elektronika" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Obszar hobbystyczny i rozwojowy</p>
-        <h2>Elektronika i systemy sterowania</h2>
-        <p>
-          Projekty elektroniczne rozwijane hobbystycznie, z naciskiem na praktyczne
-          zastosowania mikrokontrolerów, pomiarów i automatyki.
-        </p>
-      </div>
-
-      <div class="grid">
-        <article class="info-card dark">
-          <h3>Mikrokontrolery</h3>
-          <p>
-            Projekty oparte m.in. o STM32, układy wejść/wyjść, sterowanie LED,
-            obsługa czujników, komunikacja UART/SPI/I2C oraz integracja z panelami HMI.
-          </p>
-        </article>
-
-        <article class="info-card dark">
-          <h3>Prototypy i pomiary</h3>
-          <p>
-            Generatory sygnałowe, układy pomiarowe, zasilacze, sterowniki,
-            moduły testowe oraz praktyczne stanowiska do nauki i diagnostyki.
-          </p>
-        </article>
-
-        <article class="info-card dark">
-          <h3>Połączenie branż</h3>
-          <p>
-            Szczególnie interesują mnie projekty łączące infrastrukturę drogową
-            z elektroniką: sygnalizacja świetlna, detekcja, sterowanie i diagnostyka.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-light">
-      <div class="section-heading">
-        <p class="eyebrow">Kierunek rozwoju</p>
-        <h2>Co można tu znaleźć?</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <span>01</span>
-          <div>
-            <h3>Projekty drogowe</h3>
-            <p>Wybrane opracowania, koncepcje, przykłady analiz i doświadczenia z branży drogowej.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span>02</span>
-          <div>
-            <h3>Projekty elektroniczne</h3>
-            <p>Układy, prototypy, sterowniki, dokumentacja techniczna i zdjęcia z realizacji.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span>03</span>
-          <div>
-            <h3>Notatki techniczne</h3>
-            <p>Krótkie opisy rozwiązań, problemów projektowych i praktycznych wniosków.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="section contact-section">
-      <div class="contact-box">
-        <p class="eyebrow">Kontakt</p>
-        <h2>Porozmawiajmy o projekcie</h2>
-        <p>
-          Jeśli chcesz skontaktować się w sprawie współpracy, projektu technicznego
-          lub wymiany doświadczeń, napisz wiadomość.
-        </p>
-
-        <div class="contact-actions">
-          <a href="mailto:kontakt@routel.pl" class="btn btn-primary">
-            Napisz e-mail
-          </a>
-
-          <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-secondary">
-            GitHub
-          </a>
-        </div>
-
-        <p class="contact-note">
-          Adres e-mail i link GitHub można później zmienić na właściwe dane.
-        </p>
-      </div>
-    </section>
+    <section class="hero routel-hero">
+  <div class="container">
+    <h1>Projekty drogowe i organizacja ruchu</h1>
+    <p>Opracowuję projekty stałej i czasowej organizacji ruchu, projekty
+      zjazdów oraz dokumentację drogową dla samorządów, firm
+      i inwestorów indywidualnych.</p>
+    <div class="routel-actions">
+      <a class="btn btn-primary" href="#kontakt">Zapytaj o wycenę</a>
+      <a class="btn btn-secondary" href="#projekty">Zobacz projekty</a>
+    </div>
+  </div>
+</section>
+<section class="section routel-section" id="oferta">
+  <div class="container">
+    <h2>Oferta</h2>
+    <div class="routel-grid"><article class="card"><h3>Organizacja ruchu</h3><p>Projekty stałej i czasowej organizacji ruchu (SOR i COR), w tym na czas robót i prac w pasie drogowym.</p></article>
+<article class="card"><h3>Projekty zjazdów</h3><p>Dokumentacja budowy lub przebudowy zjazdu do posesji, firmy lub na działkę rolną.</p></article>
+<article class="card"><h3>Dokumentacja drogowa</h3><p>Koncepcje drogowe, dokumentacja techniczna, przedmiary robót i kosztorysy inwestorskie.</p></article></div>
+  </div>
+</section>
+<section class="section routel-section" id="projekty">
+  <div class="container">
+    <h2>Wybrane projekty</h2>
+    <div class="routel-projects"><article class="project-card routel-project">
+  <img src="assets/1924C.jpg" alt="" loading="lazy">
+  <div>
+    <h3>Przebudowa drogi powiatowej nr 1924C</h3>
+    <p>Przykład dokumentacji dotyczącej przebudowy drogi powiatowej.</p>
+    <a class="btn btn-secondary" href="projekt-dp-1924c.html"
+       aria-label="Zobacz projekt: Przebudowa drogi powiatowej nr 1924C">Zobacz projekt</a>
+  </div>
+</article>
+<article class="project-card routel-project">
+  <img src="assets/dw246.jpg" alt="" loading="lazy">
+  <div>
+    <h3>Zjazd z DW 246 w Smolnikach</h3>
+    <p>Przykład projektu zjazdu w ciągu drogi wojewódzkiej nr 246.</p>
+    <a class="btn btn-secondary" href="projekt-zjazd-smolniki.html"
+       aria-label="Zobacz projekt: Zjazd z DW 246 w Smolnikach">Zobacz projekt</a>
+  </div>
+</article></div>
+  </div>
+</section>
+<section class="section routel-section" id="o-mnie">
+  <div class="container">
+    <h2>O mnie</h2>
+    <p>Nazywam się Bartosz Musiał. Jestem inżynierem budownictwa ze specjalnością drogi, ulice i lotniska. Od 2014 roku pracuję przy zadaniach drogowych, m.in. przy organizacji ruchu, uzgodnieniach i koordynacji robót.</p>
+  </div>
+</section>
+<section class="section routel-section" id="kontakt">
+  <div class="container">
+    <h2>Wycena i współpraca</h2>
+    <div class="routel-grid">
+  <article class="card">
+    <h3>Wycena projektu</h3>
+    <p>Podaj lokalizację, opisz zakres i wskaż oczekiwany termin.
+      Jeśli masz mapę lub zdjęcia, możesz je dołączyć do wiadomości.</p>
+    <a class="btn btn-primary" href="mailto:kontakt@routel.pl?subject=ROUTEL%20%E2%80%94%20zapytanie%20o%20wycen%C4%99">Zapytaj o wycenę</a>
+  </article>
+  <article class="card">
+    <h3>Współpraca projektowa</h3>
+    <p>Napisz, przy jakich opracowaniach potrzebujesz wsparcia
+      i w jakim terminie.</p>
+    <a class="btn btn-secondary" href="mailto:kontakt@routel.pl?subject=ROUTEL%20%E2%80%94%20propozycja%20wsp%C3%B3%C5%82pracy">
+      Porozmawiajmy o współpracy
+    </a>
+  </article>
+</div>
+<p>Kontakt e-mail <a href="mailto:kontakt@routel.pl">kontakt@routel.pl</a></p>
+  </div>
+</section>
   </main>
-
   <footer class="site-footer">
-    <p>© <span id="year"></span> Routel. Portfolio techniczne.</p>
+    <div class="container routel-footer">
+      <span>ROUTEL Bartosz Musiał</span>
+      <a href="elektronika.html">Portfolio techniczne — elektronika</a>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

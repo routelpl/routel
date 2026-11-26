@@ -1,0 +1,53 @@
+
+.routel-nav, .routel-actions, .routel-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.routel-nav, .routel-footer { justify-content: space-between; }
+.routel-nav .logo img { max-height: 3rem; width: auto; }
+.routel-nav .nav-links > li > a.btn { padding: .65rem 1rem; }
+.routel-hero h1 { max-width: 18ch; }
+.routel-hero p, .routel-section > .container > p { max-width: 65ch; }
+.routel-actions, .routel-footer { flex-wrap: wrap; }
+.routel-section { scroll-margin-top: 6rem; }
+.routel-grid, .routel-projects {
+  display: grid;
+  gap: 1.25rem;
+  margin-block: 1.5rem;
+}
+.routel-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.routel-projects, #kontakt .routel-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.routel-project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.routel-project > div { padding: 0 1.25rem 1.25rem; }
+.routel-project img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+.routel-detail figure { margin: 1.5rem 0; }
+.routel-detail figure img {
+  display: block;
+  max-width: min(100%, 58rem);
+  height: auto;
+}
+@media (max-width: 860px) {
+  .routel-nav { position: relative; }
+  .routel-nav .nav-links {
+    position: absolute;
+    inset: 100% 0 auto;
+    z-index: 2;
+  }
+}
+@media (max-width: 700px) {
+  .routel-grid, .routel-projects, #kontakt .routel-grid {
+    grid-template-columns: 1fr;
+  }
+}
