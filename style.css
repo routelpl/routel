@@ -624,3 +624,16 @@ a {
   line-height: 1;
   cursor: pointer;
 }
+
+/* Justowanie akapitów w sekcji „Zakres opracowania” */
+section[aria-labelledby="scope-title"] > p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* Szerokość etykiet w sekcji „Parametry projektowe” */
+@media (min-width: 521px) {
+  section[aria-labelledby="design-title"] .project-detail-facts {
+    grid-template-columns: max-content minmax(0, 1fr);
+  }
+}
