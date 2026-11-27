@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt czasowej organizacji ruchu na czas budowy sieci światłowodowej | Routel</title>
+  <meta
+    name="description"
+    content="Czasowa organizacj ruchu w związku z budową sieci światłowodowej."
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .project-detail-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      gap: clamp(24px, 4vw, 48px);
+      align-items: start;
+    }
+
+    .project-detail-back {
+      justify-self: start;
+      text-decoration: underline;
+    }
+
+    .project-detail-gallery,
+    .project-detail-description {
+      min-width: 0;
+    }
+
+    .project-detail-layout h2 {
+      margin-bottom: 16px;
+    }
+
+    .project-detail-gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      background: var(--color-light);
+    }
+
+    .project-detail-gallery figure + figure {
+      margin-top: 16px;
+    }
+
+    .project-detail-gallery figure a,
+    .project-detail-gallery img {
+      display: block;
+    }
+
+    .project-detail-gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-detail-gallery figcaption {
+      padding: 12px 16px;
+      font-size: 0.95rem;
+    }
+
+    .project-detail-description section + section {
+      margin-top: 32px;
+    }
+
+    .project-detail-facts {
+      display: grid;
+      grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
+      gap: 10px 16px;
+      padding: clamp(16px, 3vw, 24px);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      background: var(--color-light);
+    }
+
+    .project-detail-facts dt {
+      font-weight: 600;
+    }
+
+    .project-detail-facts dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .project-detail-table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+    }
+
+    .project-detail-table th,
+    .project-detail-table td {
+      padding: 10px clamp(6px, 2vw, 14px);
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    .project-detail-table thead th {
+      background: var(--color-light);
+    }
+
+    @media (max-width: 860px) {
+      .project-detail-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .project-detail-facts {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 4px;
+      }
+
+      .project-detail-facts dd + dt {
+        margin-top: 10px;
+      }
+
+      .project-detail-table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Menu główne">
+      <a href="index.html#start" class="logo">
+        <img src="assets/logo1.png" alt="Logo Routel" class="logo-image" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Otwórz menu">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="budownictwo.html">Budownictwo</a></li>
+        <li><a href="elektronika.html">Elektronika</a></li>
+        <li><a href="zapytaj.html">Kontakt i wycena</a></li>
+		<li><a href="polityka.html">Polityka prywatności</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <h1>Organizacja ruchu na czas budowy sieci światłowodowej</h1>
+      </div>
+    </section>
+
+    <div class="projects-section">
+      <div class="projects-wrapper">
+        <a href="budownictwo.html" class="project-detail-back">
+          ← Wróć do projektów drogowych
+        </a>
+
+        <div class="project-detail-layout">
+         <section class="project-detail-gallery" aria-labelledby="gallery-title">
+  <h2 id="gallery-title">Zdjęcia i dokumentacja</h2>
+
+  <figure>
+    <a href="assets/ECS1.jpg" data-podglad aria-label="Powiększ zdjęcie z budowy">
+      <img
+        src="assets/ECS1.jpg"
+        alt="Plan sytuacyjny - etap 1"
+        loading="lazy"
+      />
+    </a>
+    <figcaption>Plan sytuacyjny oznakowania</figcaption>
+  </figure>
+
+  <figure>
+    <a href="assets/ECS2.jpg" data-podglad aria-label="Powiększ zdjęcie z budowy">
+      <img
+        src="assets/ECS2.jpg"
+        alt="Plan sytuacyjny - etap 2"
+        loading="lazy"
+      />
+    </a>
+    <figcaption>Plan sytuacyjny oznakowania</figcaption>
+  </figure>
+ 
+</section>
+          </section>
+
+          <div class="project-detail-description">
+            <section aria-labelledby="facts-title">
+              <h2 id="facts-title">Dane zadania</h2>
+
+              <dl class="project-detail-facts">
+                <dt>Nazwa zadania</dt>
+                <dd>Budowa sieci światłowodowej</dd>
+
+                <dt>Zarządcy dróg</dt>
+                <dd>Zarząd Dróg Wojewódzkich / Urząd Gminy</dd>
+
+ 				        <dt>Inwestor</dt>
+                <dd>Firma telekomunikacyjna</dd>
+				  
+                <dt>Moja rola</dt>
+                <dd>Projektant</dd>
+
+                <dt>Status</dt>
+                <dd>Zakończona</dd>
+              </dl>
+            </section>
+
+            <section aria-labelledby="scope-title">
+              <h2 id="scope-title">Zakres opracowania</h2>
+              <p>
+                Projekt zakładał wykonanie pełnej dokumentacji czasowej organizacji ruchu wraz z uzskaniem uzgodnień
+                od Zarządców dróg i Policji oraz zatwierdzenia przez Marszałka województwa. Całe zadanie zostało podzielone
+                ne 3 etapy, aby zmienimalizować utrudnienia w ruchu pojazdów.
+              </p>
+            </section>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Routel.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Powiększone zdjęcie">
+  <form method="dialog">
+    <button
+      type="submit"
+      class="photo-dialog-close"
+      aria-label="Zamknij podgląd"
+      autofocus
+    >×</button>
+  </form>
+
+  <img id="photo-dialog-image" alt="" />
+</dialog>
+
+<script>
+  const photoDialog = document.getElementById('photo-dialog');
+  const photoDialogImage = document.getElementById('photo-dialog-image');
+
+  document.querySelectorAll('.project-detail-gallery a[data-podglad]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+        return;
+      }
+
+      event.preventDefault();
+
+      photoDialogImage.src = link.href;
+      photoDialogImage.alt = link.querySelector('img').alt;
+      photoDialog.showModal();
+    });
+  });
+</script>
+</body>
+</html>
