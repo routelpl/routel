@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Przebudowa drogi powiatowej nr 1924C | Routel</title>
+  <meta
+    name="description"
+    content="Przebudowa drogi powiatowej nr 1924C. Zakres opracowania, parametry drogi i materiały projektowe."
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .project-detail-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+      gap: clamp(24px, 4vw, 48px);
+      align-items: start;
+    }
+
+    .project-detail-back {
+      justify-self: start;
+      text-decoration: underline;
+    }
+
+    .project-detail-gallery,
+    .project-detail-description {
+      min-width: 0;
+    }
+
+    .project-detail-layout h2 {
+      margin-bottom: 16px;
+    }
+
+    .project-detail-gallery figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      background: var(--color-light);
+    }
+
+    .project-detail-gallery figure + figure {
+      margin-top: 16px;
+    }
+
+    .project-detail-gallery figure a,
+    .project-detail-gallery img {
+      display: block;
+    }
+
+    .project-detail-gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-detail-gallery figcaption {
+      padding: 12px 16px;
+      font-size: 0.95rem;
+    }
+
+    .project-detail-description section + section {
+      margin-top: 32px;
+    }
+
+    .project-detail-facts {
+      display: grid;
+      grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
+      gap: 10px 16px;
+      padding: clamp(16px, 3vw, 24px);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      background: var(--color-light);
+    }
+
+    .project-detail-facts dt {
+      font-weight: 600;
+    }
+
+    .project-detail-facts dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .project-detail-table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+    }
+
+    .project-detail-table th,
+    .project-detail-table td {
+      padding: 10px clamp(6px, 2vw, 14px);
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    .project-detail-table thead th {
+      background: var(--color-light);
+    }
+
+    @media (max-width: 860px) {
+      .project-detail-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .project-detail-facts {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 4px;
+      }
+
+      .project-detail-facts dd + dt {
+        margin-top: 10px;
+      }
+
+      .project-detail-table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Menu główne">
+      <a href="index.html#start" class="logo">
+        <img src="assets/logo1.png" alt="Logo Routel" class="logo-image" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Otwórz menu">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="budownictwo.html">Budownictwo</a></li>
+        <li><a href="elektronika.html">Elektronika</a></li>
+        <li><a href="zapytaj.html">Kontakt i wycena</a></li>
+	<li><a href="polityka.html">Polityka prywatności</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <h1>Przebudowa drogi powiatowej nr 1924C</h1>
+      </div>
+    </section>
+
+    <div class="projects-section">
+      <div class="projects-wrapper">
+        <a href="budownictwo.html" class="project-detail-back">
+          ← Wróć do projektów drogowych
+        </a>
+
+        <div class="project-detail-layout">
+          <section class="project-detail-gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Materiały projektowe</h2>
+
+            <figure>
+              <a href="assets/1924C.jpg" aria-label="Otwórz pełny obraz drogi nr 1924C">
+                <img
+                  src="assets/1924C.jpg"
+                  alt="Materiał poglądowy dotyczący drogi powiatowej nr 1924C"
+                />
+              </a>
+              <figcaption>Droga powiatowa nr 1924C</figcaption>
+            </figure>
+
+            <!--
+              Aby dodać kolejny materiał, skopiuj blok <figure>.
+              Zmień ścieżkę w href i src, opis alt oraz podpis.
+            -->
+          </section>
+
+          <div class="project-detail-description">
+            <section aria-labelledby="facts-title">
+              <h2 id="facts-title">Dane zadania</h2>
+
+              <dl class="project-detail-facts">
+                <dt>Nazwa zadania</dt>
+                <dd>Przebudowa drogi powiatowej nr 1924C</dd>
+
+                <dt>Zarządca drogi</dt>
+                <dd>[Nazwa zarządcy]</dd>
+
+                <dt>Moja rola</dt>
+                <dd>[Rola i wykonana część opracowania]</dd>
+
+                <dt>Status</dt>
+                <dd>[Aktualny etap dokumentacji lub robót]</dd>
+              </dl>
+            </section>
+
+            <section aria-labelledby="scope-title">
+              <h2 id="scope-title">Zakres opracowania</h2>
+              <p>
+                [Podaj odcinek objęty projektem, cel przebudowy i najważniejsze
+                rozwiązania. Wystarczą dwa lub trzy zdania.]
+              </p>
+            </section>
+
+            <section aria-labelledby="parameters-title">
+              <h2 id="parameters-title">Parametry drogi</h2>
+
+              <table class="project-detail-table" aria-labelledby="parameters-title">
+                <thead>
+                  <tr>
+                    <th scope="col">Parametr</th>
+                    <th scope="col">Stan istniejący</th>
+                    <th scope="col">Rozwiązanie projektowane</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th scope="row">Szerokość jezdni</th>
+                    <td>[wartość w m]</td>
+                    <td>[wartość w m]</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nawierzchnia jezdni</th>
+                    <td>[rodzaj nawierzchni]</td>
+                    <td>[rodzaj nawierzchni]</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pobocza</th>
+                    <td>[szerokość i nawierzchnia]</td>
+                    <td>[szerokość i nawierzchnia]</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Odwodnienie</th>
+                    <td>[istniejący sposób odwodnienia]</td>
+                    <td>[projektowany sposób odwodnienia]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section aria-labelledby="design-title">
+              <h2 id="design-title">Parametry projektowe</h2>
+
+              <dl class="project-detail-facts">
+                <dt>Długość odcinka</dt>
+                <dd>[długość w m lub km]</dd>
+
+                <dt>Klasa drogi</dt>
+                <dd>[klasa przyjęta w dokumentacji]</dd>
+
+                <dt>Prędkość do projektowania</dt>
+                <dd>[wartość w km/h i określenie użyte w dokumentacji]</dd>
+
+                <dt>Pochylenie poprzeczne</dt>
+                <dd>[wartość w % i układ spadków]</dd>
+              </dl>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Routel.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
