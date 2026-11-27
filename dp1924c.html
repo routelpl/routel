@@ -309,5 +309,36 @@
   </footer>
 
   <script src="script.js"></script>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Powiększone zdjęcie">
+  <form method="dialog">
+    <button
+      type="submit"
+      class="photo-dialog-close"
+      aria-label="Zamknij podgląd"
+      autofocus
+    >×</button>
+  </form>
+
+  <img id="photo-dialog-image" alt="" />
+</dialog>
+
+<script>
+  const photoDialog = document.getElementById('photo-dialog');
+  const photoDialogImage = document.getElementById('photo-dialog-image');
+
+  document.querySelectorAll('.project-detail-gallery a[data-podglad]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+        return;
+      }
+
+      event.preventDefault();
+
+      photoDialogImage.src = link.href;
+      photoDialogImage.alt = link.querySelector('img').alt;
+      photoDialog.showModal();
+    });
+  });
+</script>
 </body>
 </html>
